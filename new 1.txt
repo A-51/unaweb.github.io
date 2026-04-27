@@ -1,0 +1,34 @@
+
+
+<!-- BEGIN: Carousel 
+Profile: ns187356.main.eitws.ebs7364
+AuthType: cookie,ip,uid
+QueryValue: LO system.nl-ns187356
+-->
+
+<div class="flipstercarouselheader" style="overflow:hidden !important;">
+<div style="padding-bottom:10px;width:100%;"><img src="https://imageserver.ebscohost.com/branding/FlipsterCarousel/image/catbrowsehdr.png" border="0" width="100%" height="6px"></div>
+</div>
+<div class="scrollfix" style="height:280px;margin-top:-10px; overflow:hidden !important;">
+<iframe class="EBSCOcarouselContainer" style="height:300px;background: #f2f2f2;" src="https://widgets.ebscohost.com/prod/encryptedkey/eit/eit.php?t=themes%2Fflipster_carousel_slick%2Fxsl_auth_id.php%3Fcss%3D%2F%2Fimageserver.ebscohost.com%2Fbranding%2FFlipsterCarousel%2Fcss%2Fslick-app-theme.css&q=https%3A%2F%2Fwidgets.ebscohost.com%2Fprod%2Fencryptedkey%2Fehis%2Fwidget.php%3Fprof%3Dns187356.main.eitws%26sort%3Decmtitle%26query%3DLO%252Bsystem.nl-ns187356%26db%3Deon%26numrec%3D50%26format%3Dxml%26protect%3Dno%26removeehis%3D1%26pl%3D1%26smode%3D%26forcehttp%3Dhttp%26proxy%3Dhttps%253A%252F%252Flogin.sibulgem.unilibre.edu.co%252Flogin%253Furl%253D%26rcounturl%3D&h=&custid=ns187356&authtype=cookie,ip,uid&groupid=main" frameborder="0">You need a Frame Capable browser to view this content.</iframe>
+
+<script>
+//<![CDATA[
+function carouselfixes() {
+    var carouselcontainer = document.getElementsByClassName("EBSCOcarouselContainer");
+    if (carouselcontainer.length > 0) {
+        for (var ebsco = 0; ebsco < carouselcontainer.length; ebsco++) {
+            carouselcontainer[ebsco].style.display = "none"; // For Chrome v44 xsl iframe bug.
+            carouselcontainer[ebsco].style.display = "block"; // For Chrome v44 xsl iframe bug.
+            if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) { //check if using iOS mobile
+                carouselcontainer[ebsco].scrolling = "no";
+				
+            }
+        }
+    }
+}
+window.addEventListener("load", carouselfixes(), false);
+//]]>
+</script></div>
+
+<!-- END: Carousel -->
